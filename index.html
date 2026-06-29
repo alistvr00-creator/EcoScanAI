@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoScan AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+
+        <h2>🌱 EcoScan AI</h2>
+
+        <p>Developed by <span>Eco Rangers</span></p>
+
+    </nav>
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+        <h1>Recognize Trees with Artificial Intelligence</h1>
+
+        <p>
+            Welcome to <b>EcoScan AI</b>, a smart web application that helps
+            identify tree species using Artificial Intelligence.
+            Simply point your camera at a tree and instantly receive
+            information about its name, benefits, and care recommendations.
+        </p>
+
+        <button onclick="init()">
+            📷 Start Scanning
+        </button>
+
+    </section>
+
+    <!-- Scan -->
+
+    <section class="scan">
+
+        <h2>🔍 Scan Tree</h2>
+
+        <p>
+            Point your camera toward the tree you want to identify.
+            Make sure the object is clearly visible for the best detection results.
+        </p>
+
+        <div id="webcam-container"></div>
+
+    </section>
+
+    <!-- Result -->
+
+    <section class="result">
+
+        <h2>🌿 Detection Result</h2>
+
+        <div id="label-container">
+
+            <p class="waiting">
+                Waiting for AI detection...
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- About -->
+
+    <section class="about">
+
+        <h2>About EcoScan AI</h2>
+
+        <p>
+            EcoScan AI is an Artificial Intelligence-based website designed
+            to recognize several tree species through real-time camera detection.
+            In addition to identifying trees, EcoScan AI provides useful
+            information about their benefits and maintenance to encourage
+            environmental awareness.
+        </p>
+
+    </section>
+
+    <!-- Features -->
+
+    <section class="features">
+
+        <div class="card">
+
+            <h3>🤖 AI Recognition</h3>
+
+            <p>
+                Automatically identifies tree species using AI technology.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>📷 Real-Time Camera</h3>
+
+            <p>
+                Detect trees directly through your device camera.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🌳 Tree Information</h3>
+
+            <p>
+                Displays useful information and environmental benefits.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>💧 Tree Care</h3>
+
+            <p>
+                Provides simple recommendations for proper tree care.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h2>🌱 EcoScan AI</h2>
+
+        <p>Developed by <b>Eco Rangers</b></p>
+
+        <p>Artificial Intelligence • Tree Recognition</p>
+
+        <p>© 2026 Eco Rangers. All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
